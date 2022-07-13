@@ -1,7 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from "./Home";
 import Planet from './Planet';
+
 function App() {
+  
   return (
       <BrowserRouter>
               <Routes>

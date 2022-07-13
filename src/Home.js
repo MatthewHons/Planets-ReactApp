@@ -4,8 +4,10 @@ import './Home.css';
 
 const Home = () => {
     return (
+        
         <div className='home'>
             <MenuNav/>
+            <h2>Welcome to Learn your planets !</h2>
         </div>
     );
 };
