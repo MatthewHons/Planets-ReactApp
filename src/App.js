@@ -3,11 +3,13 @@ import Home from "./pages/Home";
 import Planet from "./components/Planet";
 import MenuNav from "./components/MenuNav";
 import dataPlanet from "./assets/data/db.json";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <BrowserRouter>
       <MenuNav />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route

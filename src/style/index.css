@@ -1,4 +1,5 @@
 body {
+  background-image: url("../../public/image/background-stars.svg");
   background-color: #070724;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,7 +13,6 @@ body {
 h1{
   margin-left: 2rem;
   height: 36px;
-  top: calc(50% - 36px/2);
   font-family: 'Antonio';
   font-style: normal;
   font-weight: 400;
@@ -21,6 +21,7 @@ h1{
   letter-spacing: -1.05px;
   text-transform: uppercase;
   margin-bottom: 0;
+  margin-left:1.5rem;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -35,9 +36,10 @@ code {
   flex-direction: column;
   padding: 30px;
   padding-top: 10px;
+  
 }
-a{
-  margin-top: 2rem;
+.item{
+  margin-top: 1.7rem;
   height: 25px;
   top: calc(50% - 25px/2);
   text-decoration: none;
@@ -45,7 +47,7 @@ a{
   font-family: 'League Spartan', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 25px;
   letter-spacing: 1.36364px;
   text-transform: uppercase;
@@ -55,6 +57,7 @@ a{
   margin-bottom: 20px;
   width: 327px;
 }
+
 #circle{
       width: 20px;
       height: 20px;
@@ -65,19 +68,21 @@ a{
   justify-self: end;
   align-self: center;
   opacity: 0.4;
-  margin-right: 2rem;
+  margin-right: 1.7rem;
 }
 .container-list-item{
   border-bottom: 1px solid rgba(255, 255, 255, .1);
   display:flex;
 }
-
+.container-list-item:last-child {
+  border-bottom:0;
+}
 .bm-burger-button {
   position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 20rem;
-  top: 1.5rem;
+  width: 20px;
+  height: 20px;
+  left: 20.3rem;
+  top: 1.7rem;
 }
 
 /* Color/shape of burger icon bars */
@@ -90,26 +95,13 @@ a{
   background: #373a47;
 }
 
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-  height: 24px;
-  width: 24px;
-}
-
-/* Color/shape of close button cross */
-.bm-cross {
-  background: #FFFFFF;
-}
-
 /*
 Sidebar wrapper styles
 Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
 */
 .bm-menu-wrap {
   position: fixed;
-  height: 100%;
-  
-  
+  height: 100vh;
 }
 
 /* General sidebar styles */
@@ -127,5 +119,101 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Individual item */
 .bm-item {
   display: inline-block;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 2.3rem 1rem 1.7rem;
+  text-transform: uppercase;
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 10px;
+  letter-spacing: 1.92857px;
+  }
+.navbar-border{
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+}
+img{
+  width:154px;
+  height:154px;
+  display: flex;
+  margin: auto;
+  margin-top: 5rem;
+}
+h2{
+  margin-top: 5rem;
+  font-family: 'Antonio';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+}
+.text{
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  /* or 200% */
+  margin:-1rem 2.8rem 0 2.8rem;
+  text-align: center;
+  opacity: 0.9;
+}
+.source{
+  text-align: center;
+  margin-top: 2rem;
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+.link{
+  color: #FFFFFF;
+  font-weight: 700;
+}
+td{
+  border: 1px solid rgba(255, 255, 255, .2);
+  width: 320px;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
   
+}
+table{
+  border-spacing: 10px;
+  margin:0 -1rem 0 1rem;
+  
+}
+.table-data{
+  font-family: 'Antonio';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height */
+  letter-spacing: -0.75px;
+  text-transform: uppercase;
+  margin-right: 1.5rem;
+  margin-top: 0.5rem;
+}
+.table-title{
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 16px;
+  letter-spacing: 0.727273px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin: 1rem 1rem 1rem 1rem;
 }

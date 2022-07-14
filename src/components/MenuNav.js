@@ -20,7 +20,7 @@ const MenuNav = () => {
           {dataPlanet.planets.map((data, key) => {
             return (
               <div key={key} className="container-list-item">
-                <Link to={`/planet-${data.name}`} state={{ planet: data }} onClick={() => handleCloseMenu()}>
+                <Link className="item" to={`/planet-${data.name}`} state={{ planet: data }} onClick={() => handleCloseMenu()}>
                   <div
                     id="circle"
                     style={{ background: data.color }}
