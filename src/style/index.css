@@ -122,8 +122,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 1rem 2.3rem 1rem 1.7rem;
+  }
+.navbar-border{
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+button{
   text-transform: uppercase;
   font-family: 'Spartan';
   font-style: normal;
@@ -131,10 +136,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   font-size: 9px;
   line-height: 10px;
   letter-spacing: 1.92857px;
-  }
-.navbar-border{
-  border-bottom: 1px solid rgba(255, 255, 255, .2);
-
+  border: none;
+  background: #070724;
+  color: #FFFFFF;
+  
 }
 img{
   width:154px;
