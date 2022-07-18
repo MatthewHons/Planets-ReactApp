@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import dataPlanet from "./../assets/data/db.json";
 import { Link } from "react-router-dom";
-import { slide as Menu } from "react-burger-menu";
+import { fallDown as Menu } from "react-burger-menu";
 const MenuNav = () => {
   const [isMenuOpen, handleMenu] = useState(false);
   const handleCloseMenu = () => {
